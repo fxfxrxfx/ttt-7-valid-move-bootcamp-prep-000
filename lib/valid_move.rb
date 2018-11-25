@@ -6,5 +6,7 @@ def valid_move?(board, index)
     return nil
   end
 end
-  
+
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
+def position_taken?(board, index)
+  return (if board[index] == nil then false else !(board[index] == " " || board[index] == "") end)
