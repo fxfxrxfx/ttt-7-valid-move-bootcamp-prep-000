@@ -3,7 +3,7 @@ def valid_move?(board, index)
   if index.between(1, 9) then
     return position_taken(board, index)
   else
-    return nil
+    return false
   end
 end
 
